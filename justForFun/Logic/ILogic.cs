@@ -10,7 +10,8 @@ namespace justForFun.Logic
         public ILogic BackTo { get;  }
         public IView View { get; }
         public void ShowView();
-        public void Options();
+        public void Options(int opt);
+        public bool IsValid(int opt);
         public void Return();
 
     }

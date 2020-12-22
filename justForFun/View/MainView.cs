@@ -15,7 +15,15 @@ namespace justForFun.View
             Console.WriteLine("1 - Обновления в социальных сетях");
             Console.WriteLine("2 - Настройки");
 
+            Console.WriteLine("Выберите опцию:");
 
+            int opt = 0;
+            while (!Logic.IsValid(opt))
+            {
+                opt = int.Parse(Console.ReadLine());
+            }
+
+            Logic.Options(opt);
         }
     }
 }

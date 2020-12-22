@@ -11,9 +11,20 @@ namespace justForFun.Logic
 
         public IView View => new MainView();
 
-        public void Options()
+        public bool IsValid(int opt)
         {
-            throw new NotImplementedException();
+            return true;
+        }
+        public void Options(int opt)
+        {
+            switch (opt)
+            {
+                case 0:
+
+                    break;
+                case 1:
+                    break;
+            }
         }
 
         public void Return()
