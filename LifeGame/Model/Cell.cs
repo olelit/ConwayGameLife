@@ -10,7 +10,6 @@ namespace LifeGame.Model
     class Cell
     {
         public static Dictionary<string, Cell> Cells = new Dictionary<string, Cell>();
-        //public static List<Cell> Cells = new List<Cell>();
 
         public Point Position{ get; private set; }
 
@@ -21,9 +20,7 @@ namespace LifeGame.Model
         public Cell(int x, int y)
         {
             Position = new Point(x, y);
-            if(!Cells.ContainsKey(Key))
-                Cells.Add(Key, this);
-            //Cells = Cells.OrderBy(p => p.Position.X).ThenBy(c => c.Position.Y).ToList();
+            Cells.Add(Key, this);
         }
         public void Delete()
         {
@@ -35,7 +32,7 @@ namespace LifeGame.Model
             int transX = Position.X * shift;
             int transY = Position.Y * shift;
             Point start = new Point(transX, transY);
-            g.FillRectangle(_Color, new Rectangle(start, new Size(shift, shift)));
+            g.FillEllipse(_Color, new Rectangle(start, new Size(shift, shift)));
         }
 
         public static Cell GetCellByCoord(Point point)

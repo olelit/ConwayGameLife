@@ -36,8 +36,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.label5 = new System.Windows.Forms.Label();
-            this.gridColor = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cellColor = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,13 +45,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.speed = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.gridColor = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cellColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBackColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridColor)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -132,26 +132,6 @@
             this.trackBar1.TabIndex = 11;
             this.trackBar1.Value = 1;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 168);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Цвет линий";
-            // 
-            // gridColor
-            // 
-            this.gridColor.BackColor = System.Drawing.Color.Black;
-            this.gridColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.gridColor.Location = new System.Drawing.Point(10, 191);
-            this.gridColor.Name = "gridColor";
-            this.gridColor.Size = new System.Drawing.Size(42, 26);
-            this.gridColor.TabIndex = 9;
-            this.gridColor.TabStop = false;
-            this.gridColor.Click += new System.EventHandler(this.tableBackColor_Click);
             // 
             // label4
             // 
@@ -232,6 +212,26 @@
             this.speed.Size = new System.Drawing.Size(0, 20);
             this.speed.TabIndex = 13;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 168);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 20);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Цвет линий";
+            // 
+            // gridColor
+            // 
+            this.gridColor.BackColor = System.Drawing.Color.Black;
+            this.gridColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.gridColor.Location = new System.Drawing.Point(10, 191);
+            this.gridColor.Name = "gridColor";
+            this.gridColor.Size = new System.Drawing.Size(42, 26);
+            this.gridColor.TabIndex = 9;
+            this.gridColor.TabStop = false;
+            this.gridColor.Click += new System.EventHandler(this.tableBackColor_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -247,10 +247,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cellColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBackColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridColor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,11 +270,11 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox cellColor;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox gridColor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.Label speed;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox gridColor;
     }
 }
 

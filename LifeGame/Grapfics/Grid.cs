@@ -38,7 +38,11 @@ namespace LifeGame.Grapfics
             {
                 int x = rand.Next(0, MatrixWidth);
                 int y = rand.Next(0, MatrixHeight);
-                Cell cell = new Cell(x, y);
+                string key = Keys.ConvertToKey(new Point(x, y));
+                if (!Cell.Cells.ContainsKey(key))
+                {
+                    Cell cell = new Cell(x, y);
+                }
                 i++;
             }
         }

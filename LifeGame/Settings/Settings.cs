@@ -10,7 +10,7 @@ namespace LifeGame.Settings
     public class Settings
     {
         //GridSettings
-        public static int GridShift = 10;
+        public static int GridShift = 4;
         public static Pen GridColor = new Pen(Color.Black);
         public static int GridSeedCount = 1000;
 

@@ -46,7 +46,7 @@ namespace LifeGame
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             Graphics g = Graphics.FromImage(bmp);
 
-            _Grid.DrawGrid(g);
+            //_Grid.DrawGrid(g);
             _Grid.DrawCell(g);
             _Grid.NextIteration();
             pictureBox1.Image = bmp;
